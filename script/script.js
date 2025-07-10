@@ -1,6 +1,12 @@
+// RIFERIMENTI NECESSARI
+
 const button = document.getElementById("btnLoad");
 const images = document.getElementsByClassName("bd-placeholder-img");
 const button1 = document.getElementById("btnLoad2");
+const button2 = document.getElementsByClassName("hide");
+const cards = document.getElementsByClassName("card");
+
+// EVENT LISTENER
 
 button.addEventListener("click", () => {
   fetch("https://api.pexels.com/v1/search?query=hamsters", {
@@ -20,6 +26,9 @@ button.addEventListener("click", () => {
     .catch((error) => {
       console.error("Errore nel caricamento:", error);
     });
+  Array.from(button2).forEach((btn) => {
+    btn.innerText = "Hide";
+  });
 });
 
 button1.addEventListener("click", () => {
@@ -40,4 +49,12 @@ button1.addEventListener("click", () => {
     .catch((error) => {
       console.error("Errore nel caricamento:", error);
     });
+});
+
+Array.from(button2).forEach((btn, index) => {
+  btn.addEventListener("click", () => {
+    const card = cards[index];
+    const currentlyHidden = card.style.display === "none";
+    card.style.display = currentlyHidden ? "block" : "none";
+  });
 });
