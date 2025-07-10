@@ -1,5 +1,6 @@
 const button = document.getElementById("btnLoad");
 const images = document.getElementsByClassName("bd-placeholder-img");
+const button1 = document.getElementById("btnLoad2");
 
 button.addEventListener("click", () => {
   fetch("https://api.pexels.com/v1/search?query=hamsters", {
@@ -20,9 +21,6 @@ button.addEventListener("click", () => {
       console.error("Errore nel caricamento:", error);
     });
 });
-
-const button1 = document.getElementById("btnLoad2");
-const images1 = document.getElementsByClassName("bd-placeholder-img");
 
 button1.addEventListener("click", () => {
   fetch("https://api.pexels.com/v1/search?query=tigers", {
