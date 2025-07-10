@@ -8,6 +8,8 @@ const cards = document.getElementsByClassName("card");
 
 // EVENT LISTENER
 
+// Uso sempre Array perché si tratta di collezioni di elementi
+
 button.addEventListener("click", () => {
   fetch("https://api.pexels.com/v1/search?query=hamsters", {
     headers: {
