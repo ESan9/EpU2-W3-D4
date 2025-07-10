@@ -1,0 +1,215 @@
+<!-- Per spingere il footer in basso body 100vh, display flex con direzione a colonna. \
+ Al main posso dare flex grow 1 e il footer andrebbe in fondo. -->
+
+<!-- NAVBAR NETFLIX -->
+
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container justify-content-between">
+    <a class="navbar-brand" href="#">
+      <img height="40" src="./assets/netflix_logo.png" />
+    </a>
+    <button
+      class="navbar-toggler bg-light"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item active">
+          <a class="nav-link text-light" href="#"
+            >Home <span class="visually-hidden-focusable">(current)</span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#">TV Shows</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#">Movies</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#">Recently Added</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link text-light" href="#">My List</a>
+        </li>
+      </ul>
+
+      <div class="d-flex align-items-center d-flex">
+        <a class="nav-link" href="#"
+          ><i class="bi bi-search text-light m-3"></i
+        ></a>
+        <span class="navbar-text text-light">KIDS</span>
+        <a class="nav-link" href="#"
+          ><i class="bi bi-bell-fill text-light m-3"></i
+        ></a>
+
+        <div class="dropdown ms-2">
+          <a
+            href="#"
+            class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+            id="dropdownUser"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <img
+              src="./assets/avatar.png"
+              alt="profile"
+              class="profile-img"
+              height="40"
+            />
+          </a>
+          <ul
+            class="dropdown-menu dropdown-menu-end"
+            aria-labelledby="dropdownUser"
+          >
+            <li><a class="dropdown-item" href="./form.html">Profilo</a></li>
+            <!-- Questo rimanda alla seconda pagina -->
+            <li><a class="dropdown-item" href="#">Impostazioni</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">Esci</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="container d-flex align-items-center justify-content-between py-2">
+  <!-- Sinistra -->
+  <div class="d-flex align-items-center gap-3">
+    <h1 class="text-light p-2 fs-3">TV Shows</h1>
+
+    <!-- Tendina -->
+    <div class="dropdown">
+      <button
+        class="btn btn-outline-light btn-sm dropdown-toggle"
+        type="button"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        Genres
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Azione</a></li>
+        <li><a class="dropdown-item" href="#">Commedia</a></li>
+        <li><a class="dropdown-item" href="#">Dramma</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Icone -->
+  <div class="d-flex">
+    <button class="btn btn-outline-light btn-sm">
+      <i class="bi bi-list"></i>
+    </button>
+    <button class="btn btn-outline-light btn-sm">
+      <i class="bi bi-grid"></i>
+    </button>
+  </div>
+</div>
+
+<!-- FOOTER NETFLIX -->
+
+<footer class="w-75 p-0 p-lg-5 mx-auto">
+  <div class="container">
+    <div
+      class="d-flex justify-content-center justify-content-lg-start gap-3 mb-3"
+    >
+      <a href="#"><i class="bi bi-facebook text-secondary"></i></a>
+      <a href="#"><i class="bi bi-instagram text-secondary"></i></a>
+      <a href="#"><i class="bi bi-twitter text-secondary"></i></a>
+      <a href="#"><i class="bi bi-youtube text-secondary"></i></a>
+    </div>
+    <div class="row mb-2 text-center text-lg-start">
+      <div class="col col-6 col-lg-3 text-secondary">
+        <a href="#" class="text-secondary text-decoration-none"
+          >Audio and Subtitles</a
+        >
+      </div>
+      <div class="col col-6 col-lg-3 text-secondary">
+        <a href="#" class="text-secondary text-decoration-none"
+          >Audio Description</a
+        >
+      </div>
+      <div class="col col-6 col-lg-3 text-secondary">
+        <a href="#" class="text-secondary text-decoration-none"
+          >Audio and Subtitles</a
+        >
+      </div>
+      <div class="col col-6 col-lg-3 text-secondary">
+        <a href="#" class="text-secondary text-decoration-none">Gift Cards</a>
+      </div>
+    </div>
+    <div class="row mb-2 text-center text-lg-start">
+      <div class="col col-6 col-lg-3 text-secondary">
+        <a href="#" class="text-secondary text-decoration-none">Media Center</a>
+      </div>
+      <div class="col col-6 col-lg-3 text-secondary">
+        <a href="#" class="text-secondary text-decoration-none"
+          >Investor Relations</a
+        >
+      </div>
+      <div class="col col-6 col-lg-3 text-secondary">
+        <a href="#" class="text-secondary text-decoration-none">Jobs</a>
+      </div>
+      <div class="col col-6 col-lg-3 text-secondary">
+        <a href="#" class="text-secondary text-decoration-none">Terms of Use</a>
+      </div>
+    </div>
+    <div class="row mb-2 text-center text-lg-start">
+      <div class="col col-6 col-lg-3 text-secondary">
+        <a href="#" class="text-secondary text-decoration-none">Privacy</a>
+      </div>
+      <div class="col col-6 col-lg-3 text-secondary">
+        <a href="#" class="text-secondary text-decoration-none"
+          >Legal Notices</a
+        >
+      </div>
+      <div class="col col-6 col-lg-3 text-secondary">
+        <a href="#" class="text-secondary text-decoration-none"
+          >Cookie Preferences</a
+        >
+      </div>
+      <div class="col col-6 col-lg-3 text-secondary">
+        <a href="#" class="text-secondary text-decoration-none"
+          >Corporate Information</a
+        >
+      </div>
+    </div>
+    <div
+      class="row mb-4 justify-content-center text-center text-lg-start justify-content-lg-start"
+    >
+      <div class="col col-sm-3 text-secondary">
+        <a href="#" class="text-secondary text-decoration-none">Contact Us</a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div
+        class="col-12 d-flex justify-content-center justify-content-lg-start mb-3"
+      >
+        <button type="button" class="btn btn-outline-secondary btn-sm">
+          Service Code
+        </button>
+      </div>
+    </div>
+    <div class="row mt-2">
+      <div
+        class="col-12 d-flex justify-content-center justify-content-lg-start"
+      >
+        <p class="text-secondary mb-0 text-center text-lg-start">
+          © 1997-2019, Netflix, Inc. (i-0d00fcdc2df9c0de)
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
