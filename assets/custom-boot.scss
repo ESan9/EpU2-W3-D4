@@ -89,12 +89,4 @@ nav {
   transition: transform 0.3s ease;
 }
 
-.hover-zoom:hover img {
-  transform: scale(1.1);
-}
-
-img {
-  height: 100px;
-}
-
 @import "./scss/bootstrap.scss";
